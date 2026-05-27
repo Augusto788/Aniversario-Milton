@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milton 19 🎉</title>
+
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <div class="container">
+
+    <div class="card">
+
+      <!-- TELA DA SENHA -->
+      <div id="login">
+
+        <h1>🔒 Área Secreta</h1>
+
+        <p>
+          Apenas pessoas lendárias conseguem entrar.
+        </p>
+
+        <input 
+          type="password"
+          id="senha"
+          placeholder="Digite a senha"
+        >
+
+        <br><br>
+
+        <button onclick="verificarSenha()">
+          Entrar
+        </button>
+
+
+      </div>
+
+      <!-- CONTEÚDO PRINCIPAL -->
+      <div id="conteudo" style="display:none;">
+
+        <h1>Feliz Aniversário 🎉</h1>
+
+        <h2>Milton - 19 anos</h2>
+
+        <p>
+          Feliz aniversário meu irmão do peito ❤️<br><br>
+
+          Obrigado por todas as risadas,
+          pelas conversas e por ser esse parceiro incrivel muito obrigado pelos anos de amizade você sem duvidas é um irmão pra mim 
+
+          Te amo pra sempre meu irmão.
+        </p>
+        <h1>Lembranças da Vida 📸</h1>
+        <div class="photos">
+          <img src="IMG/1.png">
+          <img src="IMG/2.png">
+          <img src="IMG/3.png">
+          <img src="IMG/4.png">
+          <img src="IMG/5.png">
+          <img src="IMG/6.png">
+        </div>
+
+        <div class="mensagem" id="mensagem">
+          Sobreviveu 19 anos sendo maluco 😭🔥<br>
+          obs:Simples mais foi de coraçâo❤️
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    function verificarSenha(){
+
+      const senha = document.getElementById("senha").value;
+
+      if(senha === "Milton19"){
+
+        document.getElementById("login").style.display = "none";
+
+        document.getElementById("conteudo").style.display = "block";
+
+      }else{
+
+        document.getElementById("erro").style.display = "block";
+      }
+    }
+
+  </script>
+
+</body>
+</html>
